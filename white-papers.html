@@ -1,228 +1,157 @@
-/* ============================================================
-   Nadia Pomirleanu — personal academic site
-   Tokens: limestone ground, espresso ink, muted brass accent
-   Type: Fraunces (display) + Instrument Sans (body/UI)
-   ============================================================ */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Papers — Nadia Pomirleanu, Ph.D.</title>
+<meta name="description" content="Open-access white papers on Las Vegas parking pricing, Las Vegas sports, and sensory research in sports venues.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://nadiapomirleanu.com/white-papers.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="White Papers — Nadia Pomirleanu, Ph.D.">
+<meta property="og:description" content="Open-access research on Las Vegas: ten years of Strip parking fees, the sports buildout, and sensory design in venues.">
+<meta property="og:url" content="https://nadiapomirleanu.com/white-papers.html">
+<meta property="og:image" content="https://nadiapomirleanu.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="White Papers — Nadia Pomirleanu, Ph.D.">
+<meta name="twitter:image" content="https://nadiapomirleanu.com/og.png">
+<link rel="stylesheet" href="styles.css">
+<script src="analytics.js" defer></script>
+</head>
+<body>
 
-:root {
-  --paper: #edebe6;
-  --paper-deep: #e4e1da;
-  --ink: #211e1a;
-  --ink-soft: #4d473f;
-  --brass: #97783f;
-  --brass-soft: #b09a6e;
-  --line: #c8c2b6;
-  --line-dark: #3a352e;
-  --max: 1080px;
-  --measure: 64ch;
-}
+<header class="site">
+  <div class="wrap site-bar">
+    <a class="wordmark" href="index.html">Nadia Pomirleanu<span>.</span></a>
+    <nav class="main">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="ongoing.html">Ongoing Studies</a>
+      <a href="white-papers.html" class="here">White Papers</a>
+      <a href="press.html">Press</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+<section class="hero" style="padding-bottom:64px">
+  <div class="wrap">
+    <p class="eyebrow">White Papers</p>
+    <h1 class="display">Las Vegas research, written for the people who run Las Vegas.</h1>
+    <p class="lede" style="margin-top:28px">Peer-review takes years; operators decide in quarters. This series releases findings from my Las Vegas research program in plain language, with the data and its limits stated honestly. Free to read, free to share, citation appreciated.</p>
+  </div>
+</section>
 
-html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  * { animation: none !important; transition: none !important; }
-}
+<section class="band" style="padding-top:40px">
+  <div class="wrap">
 
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: "Instrument Sans", -apple-system, sans-serif;
-  font-size: 17px;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-}
+    <article class="paper-card">
+      <p class="kicker">No. 1 · Pricing &amp; Fairness</p>
+      <h3>The Price of Arrival: Ten Years of Paid Parking on the Las Vegas Strip</h3>
+      <p class="sub">What a decade of data says about charging for what was always free — and why the grievance never faded.</p>
+      <div class="paper-grid">
+        <div class="findings">
+          <p>In January 2016, MGM Resorts ended six decades of free parking on the Strip. Caesars and Wynn followed within months; Wynn reversed course in 2018, citing its hospitality mission; COVID suspended fees in 2020; they returned; and by 2023, when the Venetian finally began charging, the old deal was gone everywhere. This study tracks the full arc — disruption, suspension, reinstatement, consolidation — through 50 archival sources and a decade of Nevada Gaming Control Board revenue data.</p>
+          <p>The headline finding contradicts what pricing theory predicts. Standard price-fairness models expect customer grievance to fade as a new pricing norm settles in. It did not. Consumer-fairness language in public discourse nearly tripled from the introduction period to the consolidation period, while operators' own justification language never changed across ten years. A petition launched in February 2026 — ten years after the first fee — gathered more than 18,000 verified signatures within four months. Meanwhile, locals-market revenue diverged from Strip revenue faster after the fees than before.</p>
+          <p>The lesson for any operator considering a free-to-fee transition: when a free amenity is part of the implicit deal customers feel they own, charging for it is not a price change — it is a covenant change, and the resentment compounds rather than decays.</p>
+          <a class="btn brass" href="price-of-arrival.pdf" data-label="wp1-download">Download the white paper (PDF)</a>
+        </div>
+        <div class="numbers">
+          <div class="n">~3×</div>
+          <div class="nl">Growth in consumer-fairness language from the introduction period to the consolidation period</div>
+          <div class="n">18,048</div>
+          <div class="nl">Verified signatures on the 2026 petition (Change.org, June 11, 2026)</div>
+          <div class="n">0</div>
+          <div class="nl">Changes in operators' revenue-justification framing across the entire decade</div>
+        </div>
+      </div>
+      <img src="fig-petition.png" alt="Timeline: consumer protest bookends the decade, from the 2016 petition against MGM fees to the 2026 petition with 18,048 verified signatures" loading="lazy" style="width:100%; border:1px solid var(--line); margin-top:28px; display:block">
+      <p style="font-size:0.78rem; color:var(--ink-soft); margin-top:8px">Consumer protest bookends the decade. Figure from the white paper; author's data.</p>
 
-a { color: inherit; text-decoration: none; }
-a:focus-visible, button:focus-visible {
-  outline: 2px solid var(--brass);
-  outline-offset: 3px;
-}
+      <!-- VIDEO SLOT — when you record a 2–3 min explainer of this paper,
+           upload it to YouTube (unlisted is fine) and replace VIDEO_ID below.
+           Until then this block stays hidden (style="display:none"). -->
+      <div style="display:none; margin-top:28px">
+        <div style="position:relative; padding-bottom:56.25%; height:0; border:1px solid var(--line)">
+          <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                  title="The Price of Arrival — 3 minute briefing"
+                  style="position:absolute; inset:0; width:100%; height:100%; border:0"
+                  allowfullscreen></iframe>
+        </div>
+        <p style="font-size:0.78rem; color:var(--ink-soft); margin-top:8px">Three-minute briefing on the findings.</p>
+      </div>
+    </article>
 
-.wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+    <article class="paper-card">
+      <p class="kicker">No. 2 · Sports &amp; the City</p>
+      <h3>The Sports Capital Experiment: How Las Vegas Became a Major-League Market</h3>
+      <p class="sub">From "no team will ever come here" to Raiders, Golden Knights, Aces, F1, and the A's — what the fastest sports buildout in American history means for fans, brands, and the city.</p>
+      <div class="paper-grid">
+        <div class="findings">
+          <p>In under a decade, Las Vegas went from zero major-league franchises to a full professional sports portfolio plus marquee events. This paper examines the marketing experiment underneath: how teams build fanbases in a city of transplants and tourists, how sports reshapes the Strip's visitor economy, and what other cities can learn from it.</p>
+        </div>
+        <div class="numbers">
+          <div class="n">2026</div>
+          <div class="nl">In preparation — join the mailing list via the contact page to be notified at release</div>
+        </div>
+      </div>
+      <span class="soon">Forthcoming</span>
+    </article>
 
-/* ---------- header ---------- */
-header.site {
-  border-bottom: 1px solid var(--line);
-}
-.site-bar {
-  display: flex; align-items: baseline; justify-content: space-between;
-  padding: 26px 0;
-  gap: 24px; flex-wrap: wrap;
-}
-.wordmark {
-  font-family: "Fraunces", serif;
-  font-size: 1.15rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-}
-.wordmark span { color: var(--brass); }
-nav.main { display: flex; gap: 28px; flex-wrap: wrap; }
-nav.main a {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  padding-bottom: 3px;
-  border-bottom: 1px solid transparent;
-}
-nav.main a:hover { color: var(--ink); }
-nav.main a.here { color: var(--ink); border-bottom-color: var(--brass); }
+    <article class="paper-card">
+      <p class="kicker">No. 3 · Sensorial Marketing</p>
+      <h3>The Feel of the Game: Sensory Design in Sports Venues</h3>
+      <p class="sub">Sound, light, scent, touch, and taste as competitive assets — what venue operators control, what fans notice, and what actually drives the value of being there.</p>
+      <div class="paper-grid">
+        <div class="findings">
+          <p>Broadcast quality keeps improving; the venue's only durable advantage is what a screen cannot deliver. Drawing on sensorial marketing research and new data from the ongoing stadium-senses study, this paper maps which sensory investments change fan experience and willingness to return — and which are expensive noise.</p>
+        </div>
+        <div class="numbers">
+          <div class="n">5</div>
+          <div class="nl">Senses, treated as design variables — data collection underway via the Ongoing Studies page</div>
+        </div>
+      </div>
+      <span class="soon">Forthcoming — contribute via the <a href="ongoing.html" style="border-bottom:1px solid var(--line)">stadium senses survey</a></span>
+    </article>
 
-/* ---------- shared atoms ---------- */
-.eyebrow {
-  font-size: 0.72rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--brass);
-  margin-bottom: 18px;
-}
-.rule-double {
-  border: 0;
-  border-top: 1px solid var(--line);
-  position: relative;
-  margin: 0;
-}
-.rule-double::after {
-  content: "";
-  position: absolute; left: 0; right: 0; top: 3px;
-  border-top: 1px solid var(--line);
-}
+  </div>
+</section>
 
-h1, h2, h3 { font-family: "Fraunces", serif; font-weight: 420; line-height: 1.12; }
-.display {
-  font-size: clamp(2.3rem, 5.4vw, 4.1rem);
-  letter-spacing: -0.012em;
-  max-width: 22ch;
-}
-.display em, .q em { font-style: italic; }
+<section class="band">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Stay close to the research</p>
+      <h2 style="font-size:clamp(1.5rem,3vw,2rem); font-family:'Fraunces',serif; font-weight:420">New white papers and findings, a few times a year. No noise.</h2>
+    </div>
+    <div style="align-self:center">
+      <p class="lede">One email when a new paper drops, with the key finding up front. That's it.</p>
+      <!-- Replace # with your Substack / Buttondown / Mailchimp signup URL -->
+      <a class="btn brass" href="#REPLACE-WITH-NEWSLETTER-LINK" data-newsletter data-label="wp-newsletter">Get notified</a>
+    </div>
+  </div>
+</section>
 
-.lede {
-  max-width: var(--measure);
-  font-size: 1.06rem;
-  color: var(--ink-soft);
-}
+<section class="band dark">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Briefings</p>
+      <h2>Want these findings presented to your leadership team?</h2>
+    </div>
+    <div style="align-self:center">
+      <p class="lede">I give executive briefings and workshops based on this research for operators in hospitality, gaming, sports, and entertainment.</p>
+      <a class="btn" href="mailto:nadia.pomirleanu@unlv.edu?subject=Briefing%20inquiry">Request a briefing</a>
+    </div>
+  </div>
+</section>
 
-section.band { padding: 88px 0; }
-section.band + section.band { border-top: 1px solid var(--line); }
+<footer class="site">
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; padding:0 28px">
+    <div>© 2026 Nadia Pomirleanu</div>
+    <div><a href="index.html">About</a> &nbsp;·&nbsp; <a href="research.html">Research</a> &nbsp;·&nbsp; <a href="ongoing.html">Ongoing Studies</a></div>
+  </div>
+</footer>
 
-.band-head { display: grid; grid-template-columns: 220px 1fr; gap: 36px; margin-bottom: 52px; }
-.band-head h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
-@media (max-width: 760px) { .band-head { grid-template-columns: 1fr; gap: 8px; } }
-
-/* ---------- hero ---------- */
-.hero { padding: 110px 0 96px; }
-.hero .ident {
-  display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: end;
-}
-@media (max-width: 860px) { .hero .ident { grid-template-columns: 1fr; } }
-.hero .lede { margin-top: 30px; }
-.facts { border-left: 1px solid var(--line); padding-left: 32px; }
-.facts dt {
-  font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--brass); margin-top: 22px;
-}
-.facts dt:first-child { margin-top: 0; }
-.facts dd { font-size: 0.95rem; color: var(--ink-soft); margin-top: 4px; }
-
-/* ---------- dark band ---------- */
-.band.dark {
-  background: var(--ink);
-  color: var(--paper);
-  border-top: none;
-}
-.band.dark .eyebrow { color: var(--brass-soft); }
-.band.dark .lede { color: #b9b2a6; }
-.band.dark .rule-double, .band.dark .rule-double::after { border-color: var(--line-dark); }
-
-/* ---------- cards / entries ---------- */
-.q {
-  font-family: "Fraunces", serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
-  line-height: 1.25;
-  max-width: 28ch;
-}
-.entry { padding: 56px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
-.entry:first-of-type { border-top: none; }
-@media (max-width: 860px) { .entry { grid-template-columns: 1fr; gap: 20px; } }
-.entry .meta { margin-top: 22px; font-size: 0.86rem; color: var(--ink-soft); max-width: 46ch; }
-.entry .meta strong { font-weight: 600; color: var(--ink); }
-.entry .body p + p { margin-top: 14px; }
-.entry .body .label {
-  font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--brass); display: block; margin-bottom: 8px;
-}
-.entry .body .practice { margin-top: 26px; }
-
-/* ---------- pillars (landing) ---------- */
-.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-@media (max-width: 860px) { .pillars { grid-template-columns: 1fr; } }
-.pillar { background: var(--paper); padding: 40px 32px; display: flex; flex-direction: column; gap: 14px; }
-.pillar h3 { font-size: 1.3rem; }
-.pillar p { font-size: 0.95rem; color: var(--ink-soft); }
-.pillar a.more { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brass); margin-top: auto; }
-.pillar a.more:hover { color: var(--ink); }
-
-/* ---------- survey cards ---------- */
-.study { border: 1px solid var(--line); padding: 44px 40px; margin-top: 36px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 44px; background: var(--paper); }
-.study:first-of-type { margin-top: 0; }
-@media (max-width: 860px) { .study { grid-template-columns: 1fr; padding: 32px 24px; } }
-.study h3 { font-size: 1.45rem; max-width: 24ch; }
-.study .desc { margin-top: 14px; font-size: 0.97rem; color: var(--ink-soft); max-width: 52ch; }
-.study .aside { border-left: 1px solid var(--line); padding-left: 32px; font-size: 0.88rem; color: var(--ink-soft); }
-@media (max-width: 860px) { .study .aside { border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 18px; } }
-.study .aside b { display: block; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); font-weight: 600; margin-bottom: 6px; margin-top: 16px; }
-.study .aside b:first-child { margin-top: 0; }
-
-.btn {
-  display: inline-block;
-  margin-top: 24px;
-  padding: 13px 28px;
-  border: 1px solid var(--ink);
-  font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase;
-  transition: background 0.18s, color 0.18s;
-}
-.btn:hover { background: var(--ink); color: var(--paper); }
-.btn.brass { border-color: var(--brass); color: var(--brass); }
-.btn.brass:hover { background: var(--brass); color: var(--paper); }
-.band.dark .btn { border-color: var(--paper); }
-.band.dark .btn:hover { background: var(--paper); color: var(--ink); }
-.soon {
-  display: inline-block; margin-top: 24px;
-  font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--ink-soft); border: 1px dashed var(--line); padding: 12px 22px;
-}
-
-/* ---------- white papers ---------- */
-.paper-card { border-top: 1px solid var(--line); padding: 64px 0; }
-.paper-card:first-of-type { border-top: none; }
-.paper-card .kicker { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); margin-bottom: 14px; }
-.paper-card h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); max-width: 26ch; }
-.paper-card .sub { font-family: "Fraunces", serif; font-style: italic; font-size: 1.15rem; color: var(--ink-soft); margin-top: 10px; max-width: 50ch; }
-.paper-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; margin-top: 30px; }
-@media (max-width: 860px) { .paper-grid { grid-template-columns: 1fr; } }
-.paper-grid .findings p + p { margin-top: 12px; }
-.numbers { border-left: 1px solid var(--line); padding-left: 32px; }
-.numbers .n { font-family: "Fraunces", serif; font-size: 2rem; color: var(--brass); line-height: 1; }
-.numbers .nl { font-size: 0.82rem; color: var(--ink-soft); margin: 6px 0 24px; max-width: 30ch; }
-
-/* ---------- contact / footer ---------- */
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
-@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
-.contact-grid h2 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); max-width: 18ch; }
-.contact-list { list-style: none; margin-top: 8px; }
-.contact-list li { padding: 18px 0; border-bottom: 1px solid var(--line-dark); font-size: 0.95rem; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.contact-list span { color: #b9b2a6; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; padding-top: 3px; }
-.contact-list a:hover { color: var(--brass-soft); }
-
-footer.site {
-  border-top: 1px solid var(--line);
-  padding: 34px 0 46px;
-  font-size: 0.8rem; color: var(--ink-soft);
-  display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
-}
-.band.dark + footer.site { border-top: none; }
-footer.site a:hover { color: var(--brass); }
+</body>
+</html>
